@@ -66,9 +66,9 @@ section img {
 }
 
 .carousel {
-    overflow: hidden;
-    width: 100%;
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .carousel-container {
@@ -119,6 +119,26 @@ form button {
 
 form button:hover {
     background-color: #00509e;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel button.prev {
+    left: 0;
+}
+
+.carousel button.next {
+    right: 0;
 }
 
 /* Media Queries para Mobile */
